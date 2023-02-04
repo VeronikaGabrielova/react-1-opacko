@@ -26,8 +26,8 @@ const handleSubmit = (e) => {
   };
   
   // funguje pouze pokud máme data přímo v proměnné
-  // items.push(newProduct);
-  // ShoppingList();
+//items.push(newProduct);
+//ShoppingList();
 };
 
 document.querySelector('form').addEventListener('submit', handleSubmit);
@@ -35,3 +35,4 @@ document.querySelector('form').addEventListener('submit', handleSubmit);
 fetch('https://apps.kodim.cz/daweb/shoplist/api/weeks/0/mon')
   .then((resp) => resp.json())
   .then((data) => ShoppingList(data.results.items));
+//
